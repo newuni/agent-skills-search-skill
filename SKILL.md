@@ -75,6 +75,10 @@ Use these when the user wants discovery without a keyword query:
 ## Bundled resources
 
 ### scripts/
+- `scripts/search_skills.py`
+  - End-to-end local search helper (both sources): sitemap discovery → fetch details → rank+dedupe → print Top N.
+  - Example:
+    - `python3 scripts/search_skills.py rag vector --limit 8 --fetch 40`
 - `scripts/extract_skill_urls_from_sitemap.py`
   - Legacy helper (agent-skills.cc only).
 - `scripts/extract_skill_urls_from_sitemaps.py`
